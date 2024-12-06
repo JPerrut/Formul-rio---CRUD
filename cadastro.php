@@ -1,3 +1,25 @@
+<?php 
+
+  if(isset($_POST['submit'])) 
+  {
+
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $genero = $_POST['genero'];
+    $data_nascimento = $_POST['data_nascimento'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+    $endereco = $_POST['endereco'];
+  
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,cidade,estado,endereco) 
+    VALUES ('$nome','$email','$telefone','$genero','$data_nascimento','$cidade','$estado','$endereco')");
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +124,7 @@
 </head>
 <body>
   <div class="box">
-    <form action="">
+    <form action="cadastro.php" method="post">
       <fieldset>
         <legend>Formulário de clientes</legend>
         <br>
@@ -152,7 +174,7 @@
           <label for="endereco" class="labelInput">Endereço</label>
         </div>
         <br><br>
-        <input type="submit" value="Enviar" id="submit">
+        <input type="submit" name="submit" value="Enviar" id="submit">
 
       </fieldset>
     </form>
