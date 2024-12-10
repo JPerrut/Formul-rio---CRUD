@@ -32,7 +32,7 @@
       font-size: 1rem;
     }
 
-    button
+    .inputsubmit
     {
       background-color: dodgerblue;
       border: none;
@@ -51,13 +51,16 @@
   </style>
 </head>
 <body>
+  <form action="testLogin.php" method="POST">
+    <a href="home.html">Voltar</a>
     <div>
       <h1>Login</h1>
-      <input type="text" placeholder="Nome">
+      <input type="text" placeholder="Email" name="email">
       <br><br>
-      <input type="text" placeholder="Senha">
+      <input type="text" placeholder="Senha" name="senha">
       <br><br>
-      <button>Enviar</button>
+      <input type="submit" value="Enviar" class="inputsubmit" name="submit">
     </div>
+  </form>
 </body>
 </html>
