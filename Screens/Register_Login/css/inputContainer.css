@@ -1,0 +1,57 @@
+.box-inputContainer {
+	display: flex;
+	flex-direction: column;
+	gap: .3rem;
+	width: 100%
+}
+
+.inputContainer {
+	display: flex;
+	width: 100%;
+	padding: 0px 42px;
+	position: relative;
+}
+
+.icons {
+	position: absolute;
+	color: var(--black-color);
+	left: 50px;
+	display: flex;
+	top: 1.3rem;
+	font-size: 1.5rem;
+	align-items: center;
+	justify-content: center;
+	transition: .4s;
+}
+
+.inputUser {
+	display: flex;
+	padding-left: 36px;
+	font-size: 1.35rem;
+	width: 100%;
+	height: 4rem;
+	border: none;
+	border-bottom: 1px solid var(--black-color);
+	transition: .4s;
+}
+
+input:focus {
+	outline: 0;
+	border-bottom: 1px solid var(--blue1-color);
+	transition: .4s;
+}
+
+input:focus ~ .icons {
+	color: var(--blue1-color);
+	transition: .4s;
+}
+
+.inputUser:not(:placeholder-shown) {
+	border-bottom: 1px solid var(--blue1-color);
+	transition: .4s;
+}
+
+.inputUser:not(:placeholder-shown) ~ .icons {
+	color: var(--blue1-color);
+	transition: .4s;
+}

@@ -1,0 +1,33 @@
+main {
+	height: 100%;
+	width: 100%;
+}
+main .container {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-welcome {
+	display: flex;
+	justify-content: center;
+	margin: 7rem 0;
+}
+
+.container-welcome img {
+	width: 100%;
+	max-width: 55rem;
+}
+
+.container .main-texts {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.main-texts .title-main {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.main-texts .text {
+	font-size: 1.5rem;
+}

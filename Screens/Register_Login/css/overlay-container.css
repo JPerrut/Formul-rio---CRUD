@@ -1,0 +1,16 @@
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	color: var(--white-color);
+	text-align: center;
+	transform: translateX(100%);
+	z-index: 10;
+	transition: 1s;
+}
+
+.container.move .overlay-container {
+	transform: translateX(0%);
+}

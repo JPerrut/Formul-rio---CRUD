@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+:root {
+	--white-color: rgb(255, 255, 255);
+	--gray1-color: rgb(242, 242, 242);
+	--gray2-color: rgb(217, 217, 217);
+	--gray3-color: rgb(143, 143, 143);
+	--gray4-color: rgba(151, 173, 187, 40%);
+	--gray5-color: rgba(143, 143, 143, 10%);
+	--gray6-color: rgba(255, 255, 255, 10%);
+	--blue1-color: rgb(42, 104, 143);
+	--black-color: rgb(0, 0, 0);
+	--shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+}
+
+body .line {
+	background: var(--gray5-color);
+	height: 1px;
+	width: 100vw;
+}

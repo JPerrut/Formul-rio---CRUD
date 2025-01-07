@@ -1,0 +1,36 @@
+.overlay {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+	align-items: center;
+	padding: 20px 0;
+	background-color: var(--blue1-color);
+	transition: 1s;
+}
+
+.text-overlay {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.text-overlay h2 {
+	font-size: 2.3rem;
+}
+
+.text-overlay h3 {
+	font-size: 1.6rem;
+}
+
+.container.move .overlay:nth-child(1) {
+	z-index: 1;
+}
+
+.container.move .overlay:nth-child(2) {
+	opacity: -1;
+	z-index: 0;
+}

@@ -1,0 +1,28 @@
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	margin: 5rem 0;
+	transition: 1s;
+}
+
+.form-register {
+	transform: translateX(-100%);
+	opacity: 0;
+	z-index: -1;
+}
+
+.container.move .form-register {
+	transform: translateX(0%);
+	opacity: 1;
+	z-index: 1;
+}
+
+.container.move .form-login {
+	transform: translateX(100%);
+	opacity: 0;
+	z-index: -1;
+}
+

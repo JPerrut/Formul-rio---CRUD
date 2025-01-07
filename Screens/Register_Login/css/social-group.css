@@ -1,0 +1,53 @@
+.social-group {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.social-text {
+	display: flex;
+	align-items: center;
+}
+
+.social-text p{
+	font-size: 15px;;
+	color: var(--gray4-color);
+	margin: 0 5px
+}
+.social-text .bar {
+	width: 78px;
+	height: 1px;
+	background: var(--gray4-color);
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	gap: 1.2rem
+
+}
+
+.social-icon-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 5rem;
+	background-color: var(--gray1-color);
+	color: var(--blue1-color);
+	text-decoration: none;
+	box-shadow: 0px 4px 4px var(--shadow-color);
+	transition: .4s;
+}
+
+.social-icon-group:hover {
+	background-color: var(--blue1-color);
+	color: var(--white-color);
+	transform: translateY(-15%);
+	transition: .4s;
+}
+
+.social-icon-group .social-icon {
+	font-size: 2rem;
+}
