@@ -5,11 +5,30 @@
   {
     unset($_SESSION['email']);
     unset($_SESSION['id']);
-    header('Location: Screens/Register_Login/register_login.html');
+    header('Location: Screens/Register_Login/register_login.php');
     exit();
   }
 
-  $logado = $_SESSION['email'];
+  $email = $_SESSION['email'];
+
+  $sql = "SELECT name FROM users WHERE email = ?";
+  $stmt = $conexao->prepare($sql);
+  $stmt->bind_param("s", $email);
+  $stmt->execute();
+  $result = $stmt->get_result();
+
+  if ($result->num_rows > 0) {
+    $user = $result->fetch_assoc();
+    $logado = $user['name'];
+  }
+  else {
+    // Se por algum motivo o usuário não for encontrado, destrói a sessão
+    unset($_SESSION['email']);
+    unset($_SESSION['id']);
+    header('Location: Screens/Register_Login/register_login.php');
+    exit();
+}
+
   if(!empty($_GET['search']))
   {
     $data = $_GET['search'];

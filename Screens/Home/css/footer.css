@@ -9,6 +9,7 @@ footer .bar {
 	width: 100%;
 	height: 0.1rem;
 	background: var(--gray3-color);
+	animation: fadeInUp 1.2s ease-in-out;
 }
 
 footer .by {
@@ -16,4 +17,5 @@ footer .by {
 	padding: 10px;
 	color: var(--blue1-color);
 	font-weight: 800;
+	animation: fadeInUp 1.4s ease-in-out;
 }

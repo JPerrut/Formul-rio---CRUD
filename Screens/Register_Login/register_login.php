@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+$message = '';
+$message_type = '';
+
+if (isset($_SESSION['message'])) {
+    $message = $_SESSION['message'];
+    $message_type = $_SESSION['message_type'];
+    unset($_SESSION['message'], $_SESSION['message_type']);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +22,7 @@
   <title>Registration Screen</title>
 
   <link rel="stylesheet" href="../general_styling/css/style.css">
+  <link rel="stylesheet" href="../general_styling/css/animation.css">
 
   <link rel="stylesheet" href="css/body.css">
   <link rel="stylesheet" href="css/container.css">
@@ -21,8 +36,12 @@
   <link rel="stylesheet" href="css/social-group.css">
   <link rel="stylesheet" href="css/overlay-container.css">
   <link rel="stylesheet" href="css/overlay.css">
+  <link rel="stylesheet" href="css/transitions.css">
+  <link rel="stylesheet" href="css/mobile-text.css">
 
-  <script src="js/overlay.js" defer></script>
+  <script src="js/transitions.js" defer></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 <body> 
@@ -72,6 +91,10 @@
             </a>
           </div>
         </div>
+        <p class="mobile-text">
+          Don’t have an account? 
+					<a href="#" id="open-login-mobile">Create your account now!</a>
+        </p>
       </form>
 
       <form action="php/register.php" method="post" class="form form-register">
@@ -94,19 +117,24 @@
           </div>
           
           <div class="inputContainer">
-            <input type="password" name="confirm-password" class="inputUser" placeholder="Confirm password" id="confirm-password">
+            <input type="password" name="confirm-password" class="inputUser" placeholder="Confirm password" i
+            d="confirm-password">
             <i class="fa-solid fa-lock icons"></i>
           </div>
-          <p class="terms">By registering, you accept our <span class="color-terms">terms of use</span> and <span class="color-terms">privacy policy</span></p>
+          <p class="terms">By registering, you accept our <span class="color-terms">terms of use</span> and <span 
+          class="color-terms">privacy policy</span></p>
         </div>
-        
-      
+
         <input type="submit" name="submit" value="Sign up" id="submit">
+        <p class="mobile-text">
+        Already registered?
+					<a href="#" id="open-login-mobile">Acess your account!</a>
+        </p>
       </form>
     </div>
     <div class="overlay-container">
       <div class="overlay">
-        <img src="../../images/Register_login/logo.png" alt="Logo 'Perrut'">
+        <img class="logo" src="../../images/Register_login/logo.png" alt="Logo 'Perrut'">
         <div class="text-overlay">
           <h2>Already registered?</h2>
           <h3>Access your account!</h3>
@@ -115,7 +143,7 @@
       </div>
       
       <div class="overlay">
-        <img src="../../images/Register_login/logo.png" alt="Logo 'Perrut'">
+        <img class="logo" src="../../images/Register_login/logo.png" alt="Logo 'Perrut'">
         <div class="text-overlay">
           <h2>Don't have an account?</h2>
           <h3>Create your account now</h3>
@@ -124,5 +152,10 @@
       </div>
     </div>
   </main>
+  <div id="success-message" class="hidden">
+    <?php echo !empty($message) ? htmlspecialchars($message) : ''; ?>
+    <img src="../../images/Register_login/verify.png" alt="">
+</div>
+
 </body>
 </html>

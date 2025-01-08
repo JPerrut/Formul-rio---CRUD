@@ -34,7 +34,15 @@ footer .container {
 	height: auto;
 }
 .icon-group a {
+	text-decoration: none;
+	color: var(--black-color);
 	font-size: 1rem;
+	transition: .4s;
+}
+
+.icon-group a:hover {
+	color: var(--blue1-color);
+	transition: .4s;
 }
 
 footer .container .bar {
@@ -50,3 +58,5 @@ footer .container .by {
 	color: var(--blue1-color);
 	font-weight: 800;
 }
+
+

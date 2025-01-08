@@ -6,3 +6,18 @@
 	border-radius: 12px;
 	overflow: hidden;
 }
+
+@media (max-width: 768px) {
+	.container {
+		width: 75vw;
+		height: 75vh;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		width: 100vw;
+		height: 100vh;
+		box-shadow: none;
+	}
+}

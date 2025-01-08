@@ -14,3 +14,9 @@
 .container.move .overlay-container {
 	transform: translateX(0%);
 }
+
+@media (max-width: 768px) {
+	.overlay-container {
+		display: none;
+	}
+}

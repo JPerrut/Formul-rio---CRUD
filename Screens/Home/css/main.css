@@ -14,11 +14,13 @@ main .welcome-img {
 	max-width: 100%;
 	min-width: 500px;
 	height: auto;
+	animation: slideInFromLeft 1.2s ease-in-out forwards;
 }
 
 main .text {
 	font-size: 2.2rem;
 	color: var(--blue1-color);
+	animation: slideInFromRight 1.2s ease-in-out forwards;
 }
 
 main .buttons {
@@ -46,9 +48,18 @@ main .buttons {
 	transition: .4s;
 }
 
-.button:hover {
+.buttons .button:first-child {
+	animation: slideInFromLeft 1.2s ease-in-out;
+ }
+ 
+ .buttons .button:last-child {
+	animation: slideInFromRight 1.2s ease-in-out;
+ }
+
+.buttons .button:hover {
 	background-color: var(--blue1-color);
 	box-shadow: 0px 4px 6px var(--blue1-color);
 	color: var(--white-color);
 	transition: .4s;
+	transform: translateY(-8%);
 }

@@ -1,0 +1,109 @@
+.container {
+	animation: fadeInDown .5s ease-in-out;
+}
+
+/* White container */
+
+.form-title {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 0.5s;
+	opacity: 1;
+}
+
+.box-inputContainer .inputContainer:first-child {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 0.7s;
+	opacity: 1;
+} 
+
+.box-inputContainer .inputContainer:last-child {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 0.9s;
+	opacity: 1;
+}
+
+.notices a {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 1.1s;
+	opacity: 1;
+}
+
+.notices .remember {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 1.3s;
+	opacity: 1;
+}
+
+input[type=submit] {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 1.5s;
+	opacity: 1;
+}
+
+.social-text .bar:last-child {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 1.5s;
+	opacity: 1;
+}
+
+.social-text p {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 1.7s;
+	opacity: 1;
+}
+
+.social-text .bar:first-child {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 1.9s;
+	opacity: 1;
+}
+
+.social-icon-group:nth-child(3) {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 2.1s;
+	opacity: 1;
+}
+
+.social-icon-group:nth-child(2) {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 2.3s;
+	opacity: 1;
+}
+
+.social-icon-group:nth-child(1) {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 2.5s;
+	opacity: 1;
+}
+
+.mobile-text {
+	animation: slideInFromLeft .5s ease-in-out backwards;
+	animation-delay: 2.7s;
+	opacity: 1;
+}
+
+/* blue container */
+
+.overlay .logo {
+	animation: slideInFromRight .5s ease-in-out backwards;
+	animation-delay: 0.5s;
+	opacity: 1;
+}
+
+.text-overlay h2 {
+	animation: slideInFromRight 1.2s ease-in-out backwards;
+	animation-delay: 0.5s;
+	opacity: 1;
+}
+
+.text-overlay h3 {
+	animation: slideInFromRight 1.9s ease-in-out backwards;
+	animation-delay: 0.5s;
+	opacity: 1;
+}
+
+.overlay button {
+	animation: slideInFromRight 2.5s ease-in-out backwards;
+	animation-delay: 0.5s;
+	opacity: 1;
+}

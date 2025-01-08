@@ -1,0 +1,36 @@
+.container-about-img {
+	display: flex;
+	justify-content: center;
+	margin: 7rem 0;
+}
+
+.about-img {
+	width: 100%;
+	max-width: 28rem;
+}
+
+.title-main-about {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.text-container-about {
+	width: 100%;
+	display: flex;
+}
+
+.main-texts-about {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+.text-about {
+	font-size: 1.5rem;
+}
+
+.img-user-about {
+	margin-top: 2rem;
+	width: 100%;
+	max-width: 33rem;
+}
