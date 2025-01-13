@@ -18,6 +18,13 @@
 @media (max-width:768px) {
 	.mobile-text {
 		display: block;
+		margin-bottom: 3rem;
+	}
+}
+
+@media (max-width:480px) {
+	.mobile-text {
+		display: block;
 	}
 }
 

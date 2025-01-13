@@ -27,15 +27,15 @@ form {
 }
 
 @media (max-width: 768px) {
-	.form {
+	form {
 		width: 100%;
+		height: 100%;
 		justify-content: space-evenly;
 	}
 
 	.form-register {
 		position: absolute;
-		background-color: var(--primary-color);
-		color: var(--secundary-color);
+		justify-content: space-evenly;
 	}
 
 	.login-container.move .form-register {

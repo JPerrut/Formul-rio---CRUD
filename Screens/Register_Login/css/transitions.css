@@ -10,13 +10,13 @@
 	opacity: 1;
 }
 
-.box-inputContainer .inputContainer:first-child {
+.input_notices .inputContainer:nth-child(1){
 	animation: slideInFromLeft .5s ease-in-out backwards;
 	animation-delay: 0.7s;
 	opacity: 1;
 } 
 
-.box-inputContainer .inputContainer:last-child {
+.input_notices .inputContainer:nth-child(2) {
 	animation: slideInFromLeft .5s ease-in-out backwards;
 	animation-delay: 0.9s;
 	opacity: 1;

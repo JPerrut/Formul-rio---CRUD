@@ -7,6 +7,7 @@
 
 .inputContainer {
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	padding: 0px 42px;
 	position: relative;
@@ -54,4 +55,12 @@ input:focus ~ .icons {
 .inputUser:not(:placeholder-shown) ~ .icons {
 	color: var(--blue1-color);
 	transition: .4s;
+}
+
+.error-message, #error-message-login {
+	color: #bb1717;
+	font-size: 1rem;
+	margin-top: 2px;
+	transition: 2s ease;
+	display: none;
 }

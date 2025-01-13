@@ -3,6 +3,7 @@
 	padding: 0 42px;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 1rem;
 }
 
 .remember {
@@ -28,7 +29,7 @@
 	transition: .4s;
 }
 
-#check-box:checked ~ .check {
+#remember-me:checked ~ .check {
 	opacity: 1;
 	left: 43px;
 	transition: .4s;
@@ -58,3 +59,5 @@
 	color: var(--blue1-color);
 	transition: .4s;
 }
+
+

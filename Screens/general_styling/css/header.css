@@ -2,7 +2,7 @@ header {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	padding: 1% 0px;
+	padding: 1rem 0px;
 }
 
 header .container {
@@ -84,11 +84,12 @@ nav .menu {
 	box-shadow: 0 4px 4px var(--shadow-color);
 }
 
-.menu_user .nomeid {
+.menu_user .name-id {
 	color: var(--black-color);
 	font-size: 1.4rem;
 	font-weight: 700;
 	transition: .4s;
+	user-select: none;
 }
 
 .menu_user img {
@@ -105,36 +106,75 @@ nav .menu {
 	transform: translateY(5%);
 }
 
-.menu_user:hover .nomeid {
+.menu_user:hover .name-id {
 	color: var(--blue1-color);
 	transition: .4s;
 }
 
-.menu li, header .container .logo, .menu_user {
-	animation: fadeInDown .5s ease-in-out forwards;
-	opacity: 0;
+.menu_user-toggle {
+	cursor: pointer;
+	border: 1px solid var(--blue1-color);
+	box-shadow: 0 4px 6px var(--blue1-color);
+	transition: .4s;
+	transform: translateY(5%);
+}
+
+.menu_user-toggle .name-id {
+	color: var(--blue1-color);
+	transition: .4s;
+}
+
+@media (max-width: 768px) {
+	.nav-desktop {
+		display: none;
+	}
+
+	header .container .logo {
+		width: 10rem;
+		height: auto;
+	}
+}
+
+
+
+.logo {
+	animation: fadeInDown .5s ease-in-out backwards;
+	animation-delay: .0s;
+	opacity: 1;
 }
 
 .menu li:nth-child(1) {
+	animation: fadeInDown .5s ease-in-out backwards;
 	animation-delay: .2s;
+	opacity: 1;
 }
 
 .menu li:nth-child(2) {
+	animation: fadeInDown .5s ease-in-out backwards;
 	animation-delay: .4s;
+	opacity: 1;
 }
 
 .menu li:nth-child(3) {
+	animation: fadeInDown .5s ease-in-out backwards;
 	animation-delay: .6s;
+	opacity: 1;
 }
 
 .menu li:nth-child(4) {
+	animation: fadeInDown .5s ease-in-out backwards;
 	animation-delay: .8s;
+	opacity: 1;
 }
 
 .menu li:nth-child(5) {
+	animation: fadeInDown .5s ease-in-out backwards;
 	animation-delay: 1s;
+	opacity: 1;
 }
 
 .menu_user {
+	animation: fadeInDown .5s ease-in-out backwards;
 	animation-delay: 1.2s;
+	opacity: 1;
 }
