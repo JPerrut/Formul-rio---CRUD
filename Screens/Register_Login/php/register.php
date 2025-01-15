@@ -26,10 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->execute()) {
         echo json_encode(['status' => 'success', 'message' => 'User registered successfully!']);
     } else {
-        echo "An error occurred while processing your request.";
+        echo json_encode(['status' => 'error', 'message' => 'An error occurred while processing your request.']);
+        exit();
     }
 
     $stmt->close();
     exit();
 }
+
 ?>
