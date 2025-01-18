@@ -34,3 +34,12 @@
 	width: 100%;
 	max-width: 33rem;
 }
+
+@media (max-width: 768px) {
+	.text-container-about {
+		flex-direction: column;
+		justify-content: center;
+		text-align: initial;
+		align-items: center;
+	}
+}

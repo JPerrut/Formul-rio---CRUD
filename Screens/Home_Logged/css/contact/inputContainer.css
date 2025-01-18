@@ -1,0 +1,43 @@
+.inputContainer .icons {
+	position: absolute;
+	color: var(--black-color);
+	left: 10px;
+	display: flex;
+	top: 1.3rem;
+	font-size: 1.5rem;
+	align-items: center;
+	justify-content: center;
+	transition: .4s;
+}
+
+.inputContainer .inputUser {
+	display: flex;
+	padding-left: 36px;
+	font-size: 1.35rem;
+	width: 100%;
+	height: 4rem;
+	border: none;
+	border-bottom: 1px solid var(--black-color);
+	transition: .4s;
+}
+
+.inputContainer .text-area {
+	display: flex;
+	padding: 1rem 0 0 3.6rem;
+	font-size: 1.35rem;
+	height: 12.5rem;
+	width: 100%;
+	border: none;
+	border-radius: 1rem;
+	border: 1px solid var(--black-color);
+	transition: .4s;
+	resize: none;
+}
+
+.error-message {
+	color: #bb1717;
+	font-size: 1rem;
+	margin-top: 2px;
+	transition: 2s ease;
+	display: none;
+}

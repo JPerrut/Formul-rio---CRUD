@@ -33,6 +33,9 @@
   <meta name="viewport" content="width= , initial-scale=1.0">
   <title>Home page</title>
 
+  <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../general_styling/css/style.css">
   <link rel="stylesheet" href="../general_styling/css/body.css">
   <link rel="stylesheet" href="../general_styling/css/header.css">
@@ -43,8 +46,24 @@
   <script src="../general_styling/js/nav-mobile.js" defer></script>
 
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/about.css">
+
+  <link rel="stylesheet" href="css/home/home.css">
+  <link rel="stylesheet" href="css/home/home-animation.css">
+
+  <link rel="stylesheet" href="css/about/about.css">
+  <link rel="stylesheet" href="css/about/about-animation.css">
+
+  <link rel="stylesheet" href="css/service/service.css">
+  <link rel="stylesheet" href="css/service/service-animation.css">
+
+  <link rel="stylesheet" href="css/contact/container-contact-img.css">
+  <link rel="stylesheet" href="css/contact/text-group.css">
+  <link rel="stylesheet" href="css/contact/container-contact.css">
+  <link rel="stylesheet" href="css/contact/form.css">
+  <link rel="stylesheet" href="css/contact/inputContainer.css">
+  <link rel="stylesheet" href="css/contact/button.css">
+  <link rel="stylesheet" href="css/contact/interactions.css">
+  <link rel="stylesheet" href="css/contact/contact-animation.css">
 </head>
 <body>
 	<header>

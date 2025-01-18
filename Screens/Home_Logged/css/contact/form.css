@@ -1,0 +1,27 @@
+.form-contact .title-form {
+	font-size: 2rem;
+	width: 100%;
+	text-align: left;
+}
+
+.form-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	gap: .5rem;
+}
+
+.form-contact .input-group {
+	display: flex;
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+
+.form-contact .inputContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+}

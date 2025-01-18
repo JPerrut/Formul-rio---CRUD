@@ -1,0 +1,36 @@
+.inputUser:focus ~ .icons, .text-area:focus ~ .icons {
+	color: var(--blue1-color);
+	transition: .4s ease;
+}
+
+.inputUser:focus {
+	outline: 0;
+	border-bottom: 1px solid var(--blue1-color);
+	transition: .4s;
+}
+
+.inputUser:not(:placeholder-shown) {
+	border-bottom: 1px solid var(--blue1-color);
+	transition: .4s ease;
+}
+
+.inputUser:not(:placeholder-shown) ~ .icons {
+	color: var(--blue1-color);
+	transition: .4s;
+}
+
+.text-area:focus {
+	outline: 0;
+	border: 1px solid var(--blue1-color);
+	transition: .4s;
+}
+
+.text-area:not(:placeholder-shown) {
+	border: 1px solid var(--blue1-color);
+	transition: .4s ease;
+}
+
+.text-area:not(:placeholder-shown) ~ .icons {
+	color: var(--blue1-color);
+	transition: .4s;
+}

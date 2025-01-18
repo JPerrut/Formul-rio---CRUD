@@ -1,0 +1,135 @@
+/* text-group */
+
+.contact-img {
+	animation: fadeInDown .8s ease-in-out backwards;
+	animation-delay: 1.2s;
+	opacity: 1;
+}
+
+.texts h2 {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 1.2s;
+	opacity: 1;
+}
+
+.texts h3 {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 1.4s;
+	opacity: 1;
+}
+
+.texts h4 {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 1.6s;
+	opacity: 1;
+}
+
+.social:nth-child(1) .social-icon {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 1.8s;
+	opacity: 1;
+}
+
+.social:nth-child(2) .social-icon {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 2s;
+	opacity: 1;
+}
+
+.social:nth-child(3) .social-icon {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 2.2s;
+	opacity: 1;
+}
+
+.social:nth-child(4) .social-icon {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 2.4s;
+	opacity: 1;
+}
+
+.social:nth-child(5) .social-icon {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 2.6s;
+	opacity: 1;
+}
+
+.social:nth-child(1) .social-text {
+	animation: slideInFromRight .8s ease-in-out backwards;
+	animation-delay: 1.8s;
+	opacity: 1;
+}
+
+.social:nth-child(2) .social-text {
+	animation: slideInFromRight .8s ease-in-out backwards;
+	animation-delay: 2s;
+	opacity: 1;
+}
+
+.social:nth-child(3) .social-text {
+	animation: slideInFromRight .8s ease-in-out backwards;
+	animation-delay: 2.2s;
+	opacity: 1;
+}
+
+.social:nth-child(4) .social-text {
+	animation: slideInFromRight .8s ease-in-out backwards;
+	animation-delay: 2.4s;
+	opacity: 1;
+}
+
+.social:nth-child(5) .social-text {
+	animation: slideInFromRight .8s ease-in-out backwards;
+	animation-delay: 2.6s;
+	opacity: 1;
+}
+
+/* form-contact */
+
+.form-contact .title-form {
+	animation: slideInFromRight .8s ease-in-out backwards;
+	animation-delay: 2.8s;
+	opacity: 1;
+}
+
+.inputContainer:nth-child(1) .icons {
+	animation: fadeInDown .8s ease-in-out backwards;
+	animation-delay: 3s;
+	opacity: 1;
+}
+
+.inputContainer:nth-child(1) input {
+	animation: fadeInUp .8s ease-in-out backwards;
+	animation-delay: 3.2s;
+	opacity: 1;
+}
+
+.inputContainer:nth-child(2) .icons {
+	animation: fadeInDown .8s ease-in-out backwards;
+	animation-delay: 3.4s;
+	opacity: 1;
+}
+
+.inputContainer:nth-child(2) input {
+	animation: fadeInUp .8s ease-in-out backwards;
+	animation-delay: 3.6s;
+	opacity: 1;
+}
+
+.inputContainer:nth-child(3) .icons {
+	animation: fadeInDown .8s ease-in-out backwards;
+	animation-delay: 3.6s;
+	opacity: 1;
+}
+
+.inputContainer:nth-child(3) textarea {
+	animation: fadeInUp .8s ease-in-out backwards;
+	animation-delay: 3.8s;
+	opacity: 1;
+}
+
+.form-contact #submit {
+	animation: fadeInUp .8s ease-in-out backwards;
+	animation-delay: 4s;
+	opacity: 1;
+}

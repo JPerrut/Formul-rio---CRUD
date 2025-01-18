@@ -1,0 +1,29 @@
+.about-img {
+	animation: fadeInDown .8s ease-in-out backwards;
+	animation-delay: 1.2s;
+	opacity: 1;
+}
+
+.title-main-about {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 1.4s;
+	opacity: 1;
+}
+
+.img-user-about {
+	animation: slideInFromRight .8s ease-in-out backwards;
+	animation-delay: 1.6s;
+	opacity: 1;
+}
+
+.text-about:nth-child(1) {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 1.8s;
+	opacity: 1;
+}
+
+.text-about:nth-child(2) {
+	animation: slideInFromLeft .8s ease-in-out backwards;
+	animation-delay: 2s;
+	opacity: 1;
+}

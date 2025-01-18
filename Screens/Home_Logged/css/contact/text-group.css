@@ -1,0 +1,54 @@
+.container-contact .text-group {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.text-group .texts {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.texts h2 {
+	font-size: 3rem;
+}
+
+.texts h3 {
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.texts h4 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.text-group .social-medias {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.social-medias .social {
+	display: flex;
+	align-items: center;
+	gap: .3rem;
+}
+
+.social .social-icon {
+	width: 25px;
+	height: 25px;
+}
+
+.social .social-text {
+	text-decoration: none;
+	color: var(--black-color);
+	font-size: 1.2rem;
+	transition: .4s ease-in-out;
+}
+
+.social .social-text:hover {
+	color: var(--blue1-color);
+	transition: .4s ease-in-out;
+	transform: scale(1.01);
+}

@@ -1,0 +1,9 @@
+.container-contact-img {
+	display: flex;
+	justify-content: center;
+	margin: 4rem 0;
+}
+.container-contact-img .contact-img {
+	width: 100%;
+	max-width: 24rem;
+}
