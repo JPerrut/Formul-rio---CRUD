@@ -40,17 +40,13 @@ if (!empty($_POST['email-login']) && !empty($_POST['password-login'])) {
             echo "success";
             exit();
         } else {
-            echo "Email ou senha incorretos!";
+            echo json_encode(['status' => 'error', 'message' => 'Incorrect email or password']);
             exit();
         }
     } else {
-        echo "Email ou senha incorretos!";
+        echo json_encode(['status' => 'error', 'message' => 'Incorrect email or password']);
         exit();
     }
-} else {
-    echo "Por favor, preencha todos os campos!";
-    exit();
-}
-
+} 
 
 ?>

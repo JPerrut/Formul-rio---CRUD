@@ -10,7 +10,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
 
 	if (!email || !password) {
 		 errorMessageDiv.style.display = 'block';
-		 errorMessageDiv.textContent = "Por favor, preencha todos os campos!";
+		 errorMessageDiv.textContent = "Please fill in all the fields!";
 		 return;
 	}
 
@@ -21,18 +21,18 @@ document.getElementById("login-form").addEventListener("submit", function(event)
 		 },
 		 body: `email-login=${encodeURIComponent(email)}&password-login=${encodeURIComponent(password)}&remember-me=${rememberMe ? "1" : ""}`
 	})
-	.then(response => response.text())
+	.then(response => response.json())
 	.then(data => {
 		 if (data === "success") {
 			  window.location.href = "../Home_Logged/home_logged.php";
-		 } else {
+		 } else if (data.message === "Incorrect email or password") {
 			  errorMessageDiv.style.display = 'block';
-			  errorMessageDiv.textContent = data;
+			  errorMessageDiv.textContent = 'Incorrect email or password';
 		 }
 	})
 	.catch(error => {
 		 console.error("Erro:", error);
 		 errorMessageDiv.style.display = 'block';
-		 errorMessageDiv.textContent = "Ocorreu um erro inesperado!";
+		 errorMessageDiv.textContent = "An unexpected error occurred!";
 	});
 });
