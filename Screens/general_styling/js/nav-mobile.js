@@ -18,3 +18,25 @@ document.querySelector('.menu_user').addEventListener('click', function () {
 		}, 500); 
 	}
 });
+
+
+function lockScroll() {
+	document.body.classList.add('locked');
+}
+
+
+function unlockScroll() {
+	document.body.classList.remove('locked');
+}
+
+
+
+
+window.addEventListener('load', function() {
+	lockScroll();
+
+	document.body.addEventListener('animationend', function() {
+		 unlockScroll();
+	});
+});
+

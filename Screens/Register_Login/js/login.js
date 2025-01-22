@@ -23,7 +23,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
 	})
 	.then(response => response.json())
 	.then(data => {
-		 if (data === "success") {
+		 if (data.status === "success") {
 			  window.location.href = "../Home_Logged/home_logged.php";
 		 } else if (data.message === "Incorrect email or password") {
 			  errorMessageDiv.style.display = 'block';

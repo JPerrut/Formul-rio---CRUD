@@ -29,15 +29,16 @@ if (!empty($_POST['email-login']) && !empty($_POST['password-login'])) {
             if ($rememberMe) {
                 $token = bin2hex(random_bytes(16));
                 $expiry = time() + (30 * 24 * 60 * 60);
+                $tokenExpiry = date('Y-m-d H:i:s', $expiry);
 
                 setcookie("remember_token", $token, $expiry, "/", "", false, true);
 
                 $stmt = $conexao->prepare("UPDATE users SET remember_token = ?, token_expiry = ? WHERE id = ?");
-                $stmt->bind_param("ssi", $token, date('Y-m-d H:i:s', $expiry), $user['id']);
+                $stmt->bind_param("ssi", $token, $tokenExpiry, $user['id']);
                 $stmt->execute();
             }
 
-            echo "success";
+            echo json_encode (['status' => 'success']);
             exit();
         } else {
             echo json_encode(['status' => 'error', 'message' => 'Incorrect email or password']);

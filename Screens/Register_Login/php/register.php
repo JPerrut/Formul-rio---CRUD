@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = trim(filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING));
     $email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL));
     $password = trim($_POST['password']);
-    $confirmPassword = trim($_POST['confirm-password']);
 
     $stmt = $conexao->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);

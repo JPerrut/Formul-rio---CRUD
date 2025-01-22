@@ -11,7 +11,7 @@
 }
 
 .img-user-about {
-	animation: slideInFromRight .8s ease-in-out backwards;
+	animation: slideInFromLeft .8s ease-in-out backwards;
 	animation-delay: 1.6s;
 	opacity: 1;
 }
