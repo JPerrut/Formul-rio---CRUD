@@ -55,31 +55,31 @@
 }
 
 .social:nth-child(1) .social-text {
-	animation: slideInFromRight .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 1.8s;
 	opacity: 1;
 }
 
 .social:nth-child(2) .social-text {
-	animation: slideInFromRight .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 2s;
 	opacity: 1;
 }
 
 .social:nth-child(3) .social-text {
-	animation: slideInFromRight .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 2.2s;
 	opacity: 1;
 }
 
 .social:nth-child(4) .social-text {
-	animation: slideInFromRight .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 2.4s;
 	opacity: 1;
 }
 
 .social:nth-child(5) .social-text {
-	animation: slideInFromRight .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 2.6s;
 	opacity: 1;
 }
@@ -87,7 +87,7 @@
 /* form-contact */
 
 .form-contact .title-form {
-	animation: slideInFromRight .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 2.8s;
 	opacity: 1;
 }
@@ -99,7 +99,7 @@
 }
 
 .inputContainer:nth-child(1) input {
-	animation: fadeInUp .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 3.2s;
 	opacity: 1;
 }
@@ -111,7 +111,7 @@
 }
 
 .inputContainer:nth-child(2) input {
-	animation: fadeInUp .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 3.6s;
 	opacity: 1;
 }
@@ -123,13 +123,13 @@
 }
 
 .inputContainer:nth-child(3) textarea {
-	animation: fadeInUp .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 3.8s;
 	opacity: 1;
 }
 
 .form-contact #submit {
-	animation: fadeInUp .8s ease-in-out backwards;
+	animation: fadeInDown .8s ease-in-out backwards;
 	animation-delay: 4s;
 	opacity: 1;
 }
